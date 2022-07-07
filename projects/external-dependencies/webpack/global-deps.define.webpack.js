@@ -7,4 +7,6 @@ module.exports = { deps: [
   '@angular/router',
   'rxjs',
   'tslib'
-]};
+].concat([
+  'direct-dep'
+])};

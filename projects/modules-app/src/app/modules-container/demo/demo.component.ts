@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { timer } from 'rxjs';
+import { getMessage } from 'direct-dep';
 
 @Component({
   selector: 'app-demo',
@@ -7,6 +7,7 @@ import { timer } from 'rxjs';
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent implements OnInit {
+  message = getMessage();
 
   constructor() { }
 

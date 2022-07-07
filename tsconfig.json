@@ -22,7 +22,21 @@
       "dom"
     ],
     "paths": {
-      "global-deps": ["projects/global-dependencies/index.ts"]
+      "direct-dep": [
+        "dist/direct-dep"
+      ],
+      "global-deps": [
+        "projects/global-dependencies/index.ts"
+      ],
+      "custom-deps": [
+        "projects/custom-dependencies/index.ts"
+      ],
+      "external-deps": [
+        "projects/external-dependencies/index.ts"
+      ],
+      "indirect-dep": [
+        "dist/indirect-dep"
+      ]
     }
   },
   "angularCompilerOptions": {

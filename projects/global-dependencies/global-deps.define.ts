@@ -7,7 +7,7 @@ import * as angularRouter from '@angular/router';
 import * as rxjs from 'rxjs';
 import * as tslib from 'tslib';
 
-export const deps: { name: string, package: unknown }[] = [
+export const globalDeps: { name: string, package: unknown }[] = [
   { name: '@angular/common', package: angularCommon },
   { name: '@angular/common/http', package: angularCommonHttp },
   { name: '@angular/core', package: angularCore },

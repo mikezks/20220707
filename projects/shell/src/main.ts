@@ -1,4 +1,9 @@
-import('global-deps').then(esm => esm.registerGlobalDeps());
+import { addGlobalDeps } from 'external-deps';
 
-import('./bootstrap')
-	.catch(err => console.error(err));
+Promise.all([
+  import('global-deps').then(esm => addGlobalDeps(esm.globalDeps)),
+  import('custom-deps').then(esm => addGlobalDeps(esm.customDeps))
+]).then(
+  () => import('./bootstrap')
+	  .catch(err => console.error(err))
+);
