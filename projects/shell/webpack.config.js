@@ -31,8 +31,13 @@ module.exports = {
             "modules": "http://localhost:4300/remoteEntry.js",
         },
         shared: share({
-          // '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-          // '@angular/router': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          '@angular/common': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          '@angular/forms': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          '@angular/platform-browser': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          '@angular/router': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          'rxjs': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          'tslib': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
           ...sharedMappings.getDescriptors()
         })
 
