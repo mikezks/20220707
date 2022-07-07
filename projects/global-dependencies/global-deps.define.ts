@@ -9,7 +9,6 @@ import * as tslib from 'tslib';
 
 export const globalDeps: { name: string, package: unknown }[] = [
   { name: '@angular/common', package: angularCommon },
-  { name: '@angular/common/http', package: angularCommonHttp },
   { name: '@angular/core', package: angularCore },
   { name: '@angular/forms', package: angularForms },
   { name: '@angular/platform-browser', package: angularPlatformBrowser },
